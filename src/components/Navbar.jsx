@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Search } from "@material-ui/icons"
 import Badge from '@material-ui/core/Badge';
 import { ShoppingCartOutlined } from '@material-ui/icons'
+import { Link } from "react-router-dom"
 
 
 
@@ -46,6 +47,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
     font-weight: bold;
+   
 `
 
 const Right = styled.div`
@@ -73,23 +75,27 @@ const Navbar = () => {
                         EN
                         <SearchContainer>
                             <Input />
-                            <Search style={{color:"gray"}} />
+                            <Search style={{ color: "gray" }} />
                         </SearchContainer>
                     </Language>
                 </Left>
                 <Center>
-                    <Logo>
-                        YOOX.
-                    </Logo>
+                    <Link style={{ textDecoration: "none", color: "Black" }} to='/Home'>
+                        <Logo>
+                            YOOX.
+                        </Logo>
+                    </Link>
                 </Center>
                 <Right>
                     <MenuItem>
                         <Badge badgeContent={8} color="primary">
-                          <MenuItem>REGISTER</MenuItem>
-                          <MenuItem>SIGN IN</MenuItem>
-                          <MenuItem>
-                            <ShoppingCartOutlined />
-                          </MenuItem> 
+                            <MenuItem><Link to="/register">REGISTER</Link></MenuItem>
+                            <MenuItem><Link to="/login">SIGN IN</Link></MenuItem>
+                            <MenuItem>
+                                <Link to="/cart">
+                                    <ShoppingCartOutlined />
+                                </Link>
+                            </MenuItem>
                         </Badge>
                     </MenuItem>
                 </Right>

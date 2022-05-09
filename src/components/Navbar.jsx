@@ -79,7 +79,7 @@ const Navbar = () => {
                 </Left>
                 <Center>
                     <Logo>
-                        LAMA.
+                        YOOX.
                     </Logo>
                 </Center>
                 <Right>

@@ -6,6 +6,7 @@ import Products from "../components/Products"
 import Newsletter from "../components/Newsletter"
 import Footer from "../components/Footer"
 import { Add, Remove } from "@material-ui/icons";
+import { Link } from "react-router-dom"
 
 
 const Container = styled.div``
@@ -147,7 +148,7 @@ const Product = () => {
                             <Amount>1</Amount>
                             <Add />
                         </AmountContainer>
-                        <Button>ADD TO CART</Button>
+                        <Button><Link to="/cart" style={{textDecoration:"none", color:"black"}}>ADD TO CART</Link></Button>
                     </AddContainer>
                 </InfoContainer>
 

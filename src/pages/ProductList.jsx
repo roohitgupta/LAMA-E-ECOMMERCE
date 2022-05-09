@@ -5,7 +5,7 @@ import Announcement from "../components/Announcement"
 import Products from "../components/Products"
 import Newsletter from "../components/Newsletter"
 import Footer from "../components/Footer"
-import { Link } from "react-router-dom"
+
 
 const Container = styled.div`
     

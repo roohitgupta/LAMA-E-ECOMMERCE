@@ -42,12 +42,14 @@ const Button = styled.button`
 
 const CategoryItem = ({ item }) => {
   return (
-    <Container>
-      <Image src={item.img} />
-      <Info>
+    <Container key={item.id} >
+      <Link to={`/products/${item.cat}`}>
+        <Image src={item.img} />
+        <Info>
           <Title>{item.title}</Title>
-          <Button><Link style={{textDecoration:"none", color:"black"}} to="/productlist">SHOP NOW</Link></Button>
-      </Info>
+          <Button>SHOP NOW</Button>
+        </Info>
+      </Link>
     </Container>
   );
 };

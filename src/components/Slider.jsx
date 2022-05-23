@@ -81,6 +81,7 @@ const Button = styled.button`
 
 
 const Slider = () => {
+    
     const [slideIndex, setSlideIndex] = useState(0);
     const handleClick = (direction) => {
 

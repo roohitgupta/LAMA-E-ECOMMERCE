@@ -15,7 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/product/:id" element={<Product />} />
+        <Route path="/product" element={<Product />} />
         <Route path="/products/:category" element={<ProductList />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={user ? <Navigate replace to="/" /> : <Login />} />
